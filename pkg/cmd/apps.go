@@ -38,6 +38,7 @@ func MakeApps() *cobra.Command {
 
 	command.AddCommand(install)
 	install.AddCommand(makeInstallOpenFaaS())
+	install.AddCommand(makeInstallCertManager())
 	install.AddCommand(makeInstallMetricsServer())
 	install.AddCommand(makeInstallInletsOperator())
 
@@ -45,5 +46,5 @@ func MakeApps() *cobra.Command {
 }
 
 func getApps() []string {
-	return []string{"openfaas", "metrics-server", "inlets-operator"}
+	return []string{"openfaas", "metrics-server", "inlets-operator", "cert-manager"}
 }
