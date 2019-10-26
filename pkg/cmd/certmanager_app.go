@@ -15,7 +15,7 @@ func makeInstallCertManager() *cobra.Command {
 		Use:          "cert-manager",
 		Short:        "Install cert-manager",
 		Long:         "Install cert-manager for obtaining TLS certificates from LetsEncrypt",
-		Example:      "k3sup install cert-manager",
+		Example:      "k3sup app install cert-manager",
 		SilenceUsage: true,
 	}
 
